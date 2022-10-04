@@ -1,0 +1,15 @@
+footer{
+    padding-top: 800px;
+    display:flex;
+}
+
+.name{
+    
+    width: 100%;
+    padding-left: 1400px;
+}
+
+.year{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}

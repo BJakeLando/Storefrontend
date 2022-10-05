@@ -12,13 +12,13 @@ function App() {
   return (
     <div className='navBar'>
       <NavBar />
-      <h1 className="site-title">Karla's Portaits</h1>
+      <h1 className="site-title">Karla's Portraits</h1>
 
       <Catalogue />
       
       <Footer />
 
-      
+  
     </div>
     
   );

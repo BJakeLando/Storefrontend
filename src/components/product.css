@@ -1,5 +1,5 @@
 .product{
-    background-color: gray;
+    background-color: skyblue;
     display: inline-block;
     width: 250px;
     height:400px;
@@ -11,8 +11,10 @@
 
 }
 
+
 .cart-btn{
   color: darkgreen;
   background-color: aqua;
   margin-top: 10px;
+ 
 }

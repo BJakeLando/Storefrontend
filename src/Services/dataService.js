@@ -8,39 +8,46 @@ const catalogue = [
     },
     {
         _id:'2',
-        title: "Grandparents",
+        title: "Squid",
         price: 200.00,
         category: "Water Color",
-        image: "test1.png"
+        image: "Squid.jpg"
     },
     {
         _id:'3',
 
-        title: "Beautiful day at the beach",
+        title: "Couple",
         price: 150.00,
         category: "Oil Based",
-        image: "test1.png"
+        image: "Couple.jpg"
     },
     {
         _id:'4',
-        title: "Sunset Cliffs",
+        title: "Self Portrait",
         price: 12.99,
         category: "Water Color",
-        image: "test1.png"
+        image: "Self.jpg"
     },
     {
         _id:'5',
-        title: "Oranges",
+        title: "Family",
         price: 12.99,
         category: "Oil Based",
-        image: "test1.png"
+        image: "Family.jpg"
     },
     {
         _id:'6',
-        title: "Shadow",
+        title: "Pet",
         price: 12.99,
         category: "Water Color",
-        image: "test1.png"
+        image: "pet.jpg"
+    },
+    {
+        _id:'7',
+        title: "Love in the City",
+        price: 12.99,
+        category: "Water Color",
+        image: "CityLove.jpg"
     },
     //at least 7 items
     

@@ -10,7 +10,7 @@ const WishList = () => {
   };
 
   const addToList = () => {
-    let copy = list;
+    let copy = [...list];
     copy.push(text);
     setList(copy);
     setText("");
@@ -25,7 +25,7 @@ const WishList = () => {
       </div>
       <ul>
         {list.map((t) => (
-          <li>{t}</li>
+          <li key={t}>{t}</li>
         ))}
       </ul>
     </div>

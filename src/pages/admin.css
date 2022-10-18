@@ -1,0 +1,31 @@
+.admin {
+
+}
+
+.admin h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #6a6a6a;
+    margin-bottom: 5px;
+
+}
+
+.admin .parent{
+    display: flex;
+}
+
+.admin .sec-products{
+    flex: 2;
+    border: 1px solid #fafafa;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 15px;
+}
+
+.admin .sec-discounts{
+    flex: 1;
+    border: 1px solid #fafafa;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 15px;
+}

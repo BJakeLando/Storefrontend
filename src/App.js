@@ -1,28 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-import NavBar from './components/navBar';
-import Footer from './components/footer';
-import Catalogue from './pages/catalogue';
-import WishList from './components/wishlist';
+import logo from "./logo.svg";
+import "./App.css";
+import NavBar from "./components/navBar";
+import Footer from "./components/footer";
+import Catalogue from "./pages/catalogue";
+import WishList from "./components/wishlist";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Admin from "./pages/admin";
 
 function App() {
   return (
-    <div className='navBar'>
-      <NavBar />
-      <h1 className="site-title">Karla's Portraits</h1>
+    <BrowserRouter>
+      <div className="navBar">
+        <NavBar />
+        <h1 className="site-title">Karla's Portraits</h1>
 
-      <Catalogue />
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/catalogue" element={<Catalogue />} />
+          <Route path="/wish" element={<WishList />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
 
-      <WishList />
-      
-      <Footer />
-
-  
-    </div>
-    
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

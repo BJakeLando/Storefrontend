@@ -1,5 +1,5 @@
 import "./navBar.css";
-
+import React from "react";
 import { Link } from "react-router-dom";
 import WishList from "./wishlist";
 import Admin from "./../pages/admin";

@@ -1,20 +1,36 @@
 .product{
     background-color: skyblue;
     display: inline-block;
-    width: 250px;
-    height:400px;
+    width: 1000px;
+    height:1000px;
     border: 1px solid #49674f;
     margin: 18px;
     border-radius: 6px;
     padding: 10px;
     text-align: center;
+    
+
+}
+
+.product img{
+  padding-top: 25px;
+  height: 800px;
+
+}
+.cart-btn{
+  color:  darkgreen;
+  background-color: aqua;
+  margin-top: 10px;
+ 
+}
+ 
+.price{
+  font-weight: bolder;
 
 }
 
 
-.cart-btn{
-  color: darkgreen;
-  background-color: aqua;
-  margin-top: 10px;
- 
+.total{
+  font-weight: bold;
+
 }

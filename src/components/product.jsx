@@ -15,14 +15,15 @@ const Product = (props) => {
   };
 
   return (
+
     <div className="product">
       <img src={"/images/" + props.data.image} height={150} alt="" />
 
       <h5>{props.data.title}</h5>
 
       <div className="prices">
+      <label className="price">Price: ${props.data.price.toFixed("2")}</label><br></br>
         <label className="total">Total: ${getTotal()}</label>
-        <label className="price">${props.data.price.toFixed("2")}</label>
       </div>
 
       <div className="controls">

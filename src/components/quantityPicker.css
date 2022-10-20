@@ -1,4 +1,13 @@
-.qauantityPicker{
-    background-color: greenyellow;
 
+.btnIncrease {
+    margin: 5px;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+
+.btnDecrease {
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgb(241, 92, 92);
+    
 }

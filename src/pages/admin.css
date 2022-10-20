@@ -1,22 +1,22 @@
-.admin {
-
+.admin{
+    height: 1000px;
+    background-color: darkgray;
+    color: whitesmoke;
+    display: flex;
+    
 }
 
 .admin h1 {
     text-align: center;
     font-weight: bold;
-    color: #6a6a6a;
+    color: white;
     margin-bottom: 5px;
 
 }
 
-.admin .parent{
-    display: flex;
-}
-
 .admin .sec-products{
     flex: 2;
-    border: 1px solid #fafafa;
+    border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
     margin: 0 15px;
@@ -24,7 +24,7 @@
 
 .admin .sec-discounts{
     flex: 1;
-    border: 1px solid #fafafa;
+    border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
     margin: 0 15px;

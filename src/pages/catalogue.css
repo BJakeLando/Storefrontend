@@ -1,6 +1,11 @@
+
 .product{
     display:inline-block;
     width:270px;
     height: 300px;
     border: 1px solid transparent;
+}
+
+.catalogue h1{
+    color:gray;
 }

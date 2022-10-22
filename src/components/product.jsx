@@ -1,9 +1,13 @@
 import QuantityPicker from "../components/quantityPicker";
 import "./product.css";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import StoreContext from "../state/storeContext";
+import "font-awesome/css/font-awesome.min.css";
 
 const Product = (props) => {
   const [quantity, setQuantity] = useState(1);
+  const addToCart = useContext(StoreContext).addToCart;
+
   const handleQuantityChange = (qty) => {
     console.log("QuantityPicker Changed", qty);
     setQuantity(qty);
@@ -12,6 +16,10 @@ const Product = (props) => {
   const getTotal = () => {
     const total = quantity * props.data.price;
     return total.toFixed("2");
+  };
+  const handleAdd = () => {
+    let pForCart = {...props.data, quantity: quantity};
+    addToCart(pForCart); // call the context function
   };
 
   return (
@@ -28,7 +36,7 @@ const Product = (props) => {
 
       <div className="controls">
         <QuantityPicker onChange={handleQuantityChange} />
-        <button className="cart-btn">Add to Cart</button>
+        <button onClick={handleAdd} className="cart-btn">Add to Cart</button>
       </div>
     </div>
   );

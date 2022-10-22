@@ -1,11 +1,13 @@
-
-.product{
-    display:inline-block;
-    width:270px;
-    height: 300px;
-    border: 1px solid transparent;
+.catalogue{
+    align-items: center;
+    background-color: rgb(204, 199, 199);
 }
-
 .catalogue h1{
-    color:gray;
+    border: 1px solid black;
+    color: gray;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 950px;
 }

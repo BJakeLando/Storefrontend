@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Product from "../components/product";
 import Dataservice from "../Services/dataService";
 import { useState } from "react";
+import "./catalogue.css";
 
 function Catalogue() {
   const [products, setProducts] = useState([]);
@@ -16,7 +17,7 @@ function Catalogue() {
 
   return (
     <div className="catalogue">
-      <h1>Check our amazing catalogue!</h1>
+      <h1>Gallery</h1>
       <h5>We have {products.length} products waiting for you</h5>
 
       <div className="list-container">

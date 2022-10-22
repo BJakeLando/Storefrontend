@@ -10,25 +10,31 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Admin from "./pages/admin";
+import Cart from "./pages/cart";
+import "font-awesome/css/font-awesome.min.css";
+import GlobalContext from "./state/globalContext";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="navBar">
-        <NavBar />
-        <h1 className="site-title">Karla's Portraits</h1>
+    <GlobalContext>
+      <BrowserRouter>
+        <div className="navBar">
+          <NavBar />
+          <h1 className="site-title">Karla's Portraits</h1>
 
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/catalogue" element={<Catalogue />} />
-          <Route path="/wish" element={<WishList />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/admin" element={<Admin />} />
-        </Routes>
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/catalogue" element={<Catalogue />} />
+            <Route path="/wish" element={<WishList />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
 
-        <Footer />
-      </div>
-    </BrowserRouter>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </GlobalContext>
   );
 }
 

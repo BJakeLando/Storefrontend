@@ -1,10 +1,12 @@
 import "./navBar.css";
 import React from "react";
 import { Link } from "react-router-dom";
-import WishList from "./wishlist";
-import Admin from "./../pages/admin";
+import StoreContext from "./../state/storeContext";
+import { useContext } from "react";
 
 function NavBar() {
+  const user = useContext(StoreContext).user;
+  const cart = useContext(StoreContext).cart;
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
@@ -52,10 +54,14 @@ function NavBar() {
               placeholder="Search"
               aria-label="Search"
             />
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
+
+            <Link className="btn btn-outline-light" to="/cart">View Cart
+              <span class="badge text-bg-primary">
+                <span class="badge text-bg-primary">{cart.length}</span>
+              </span>
+            </Link>
           </form>
+          <label>{user.name}</label>
         </div>
       </div>
     </nav>

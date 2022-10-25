@@ -1,0 +1,29 @@
+.homeContainer{
+    background-image: url("/public/images/mountain.jpg");
+    height: 3000px;
+    width: 4000px;
+    
+
+   
+    
+}
+.homeBanner{
+    flex:auto;
+    position: relative;
+    color:rgb(197, 184, 169);
+    padding-left: 5px;
+    padding-bottom: 100px;
+    font-size: 100px;
+
+}
+
+.galBtn{
+  
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    height:120px;
+    width: 120px;
+    background-color:darkgray;
+    color: rgb(121, 32, 32);
+}

@@ -17,6 +17,7 @@ const Product = (props) => {
     const total = quantity * props.data.price;
     return total.toFixed("2");
   };
+  
   const handleAdd = () => {
     let pForCart = {...props.data, quantity: quantity};
     addToCart(pForCart); // call the context function

@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import NavBar from "./components/navBar";
 import Footer from "./components/footer";
@@ -14,14 +14,13 @@ import Cart from "./pages/cart";
 import "font-awesome/css/font-awesome.min.css";
 import GlobalContext from "./state/globalContext";
 
+
 function App() {
   return (
     <GlobalContext>
       <BrowserRouter>
         <div className="navBar">
           <NavBar />
-          <h1 className="site-title">Karla's Portraits</h1>
-
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/catalogue" element={<Catalogue />} />

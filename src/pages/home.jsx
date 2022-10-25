@@ -1,6 +1,6 @@
 import "./home.css";
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function home() {
   // const [goToContact, setGoToContact] = React.useState(false);
@@ -10,20 +10,21 @@ function home() {
   // }
 
   return (
+    <div className="homeContainer"> 
     <div>
-      <h1 className="homeBanner">Karla's Portraits Homepage</h1>
-      <div className="homeImg">
-        <img src="/images/homepage.jpg" alt="" />
-      </div>
-      <link className="btn btn-lg btn dark" to="/.catalogue"></link>
+      <h1 className="homeBanner">Homepage</h1>
+      <img src="./public/images/self.jpg" alt="" />
+      <Link to="/catalogue">
+      <button className="galBtn" >The Gallery</button></Link> 
       {/* /* <button
         onClick={() => {
           setGoToContact(true);
         }}
       >
-        Check out my art catalogue!
+        The Gallery
       </button> */ }
     </div>
+   </div>
   );
 }
 

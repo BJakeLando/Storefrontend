@@ -6,11 +6,23 @@ const GlobalContext = (props) => {
   const [user, setUser] = useState({ id: 1, name: "Brandon" });
 
   const addToCart = (prod) => {
-    setCart([...cart,prod]);
-    
-        // let copy = [...cart, prod];
-    // copy.push(prod); LONG WAY TO DO
+    let cartCopy = [...cart];
+    let found = false;
 
+    for (let i = 0; i < cartCopy.length; i++) {
+      let item = cartCopy[i];
+      if (item._id == prod.id) {
+        //found it
+        item.quantity += prod.quantity;
+        found = true;
+      }
+    }
+
+    if(!found){
+      cartCopy.push(prod);
+    }
+
+    setCart(cartCopy);
   };
 
   const removeProd = () => {

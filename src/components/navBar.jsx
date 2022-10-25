@@ -7,6 +7,17 @@ import { useContext } from "react";
 function NavBar() {
   const user = useContext(StoreContext).user;
   const cart = useContext(StoreContext).cart;
+
+  const getCount = () => {
+    let count = 0;
+    for (let i = 0; i < cart.length; i++) {
+      let prod = cart[i];
+      count += prod.quantity;
+    }
+
+    return count;
+  };
+
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
@@ -55,9 +66,10 @@ function NavBar() {
               aria-label="Search"
             />
 
-            <Link className="btn btn-outline-light" to="/cart">View Cart
+            <Link className="btn btn-outline-light" to="/cart">
+              View Cart
               <span class="badge text-bg-primary">
-                <span class="badge text-bg-primary">{cart.length}</span>
+                <span class="badge text-bg-primary">{getCount()}</span>
               </span>
             </Link>
           </form>

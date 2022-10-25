@@ -45,11 +45,11 @@ const Cart = () => {
           <div>
             <ul>
               <ul>
-                {cart.map((p) => (
+                {/* {cart.map((p) => (
                   <li key={p._id}>
                     {p.title} - {p.quantity}
                   </li>
-                ))}
+                ))} */}
               </ul>
             </ul>
           </div>

@@ -1,0 +1,25 @@
+.about {
+   
+    height: 4000px;
+}
+
+.about p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    padding-top: 100px;
+    padding-left: 150px;
+    
+} 
+
+.about h1 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.aboutImg {
+    height: 200px;
+    width: 200px;
+    padding-left: 900px;
+    border-radius: 50%;
+}

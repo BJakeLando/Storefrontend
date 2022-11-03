@@ -10,10 +10,14 @@ function Catalogue() {
   //use effect
   // to execute something when the component
   useEffect(() => {
-    let service = new Dataservice();
-    let result = service.getCatalogue();
-    setProducts(result);
+    loadData();
   }, []);
+
+  const loadData = async () => {
+  let service = new Dataservice();
+    let result = await service.getCatalogue();
+    setProducts(result);
+  }
 
   return (
     <div className="catalogue">

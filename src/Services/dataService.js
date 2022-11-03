@@ -1,10 +1,12 @@
+import axios from 'axios';
+
 const catalogue = [
     {
         _id: '1',
         title: "Couple at the Wedding",
         price: 150.00,
         category: "Water Color",
-        image: "wedding.jpg" //img-1.jpg
+        image: "wedding.jpg" 
     },
     {
         _id:'2',
@@ -54,18 +56,35 @@ const catalogue = [
 ];
 
 class Dataservice {
-    getCatalogue() {
-        return catalogue;
+    async getCatalogue() {
+        // use this line to work without a server below
+        //return catalogue;
+
         //TODO: call the server to get the data
+        // use the line below to work with the server
+        let res = await axios.get("http://127.0.0.1:5000/api/catalog");
+        return res.data;
 
     }
 
-    saveOrder(){
-
+    async saveProduct(product){
+        let res = await axios.post("http://127.0.0.1:5000/api/catalog", product);
+        return res.data;
     }
 
-    validateCouponCode(){
+    saveOrder(){}
 
+
+    validateCouponCode(){}
+
+    async saveCoupon(coupon){
+        let res = await axios.post("http://127.0.0.1:5000/api/coupons", coupon);
+        return res.data;
+    }
+
+    async getCoupons(){
+        let res = await axios.get("http://127.0.0.1:5000/api/coupons");
+        return res.data;
     }
 
 }

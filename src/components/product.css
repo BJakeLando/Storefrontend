@@ -4,6 +4,7 @@
 }
 
 .product{
+    vertical-align:baseline;
     background-color: skyblue;
     display: inline-block;
     width: 1000px;
@@ -11,21 +12,17 @@
     border: 1px solid #49674f;
     margin: 18px;
     border-radius: 6px;
-    padding: 10px;
     text-align: center;
-    
-
 }
 
 .product img{
   padding-top: 25px;
-  height: 800px;
+  height: 750px;
 
 }
 .cart-btn{
   color:  darkgreen;
   background-color: aqua;
-  margin-top: 10px;
  
 }
  

@@ -68,8 +68,8 @@ function NavBar() {
 
             <Link className="btn btn-outline-light" to="/cart">
               View Cart
-              <span class="badge text-bg-primary">
-                <span class="badge text-bg-primary">{getCount()}</span>
+              <span className="badge text-bg-primary">
+                <span className="badge text-bg-primary">{getCount()}</span>
               </span>
             </Link>
           </form>
